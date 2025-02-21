@@ -18,7 +18,7 @@
 }
 
 .titulo {
-    @import url("https://fonts.googleapis.com/css2?family=Monomakh&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Monomakh&display=swap"); /*No funciona validar por que se agrega via enlace lInk*/
 
     h1 {
       font-family: "Monomakh", sans-serif;
@@ -55,7 +55,7 @@
 }
 
 .sidebar li:hover {
-  background-color: #18a82b; /* Cambia a rojo al pasar el mouse */
+  background-color: #18a82b; 
 }
 .main {
   grid-area: main;
