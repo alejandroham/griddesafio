@@ -1,0 +1,118 @@
+.grid-container {
+  background-color: azure;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
+  height: 100vh;
+  gap: 10px;
+  font-family: "roboto", sans-serif;
+  margin: 0;
+}
+.header {
+  grid-area: header;
+  text-align: center;
+  background-color: #a9d406;
+  margin: 0;
+}
+
+.titulo {
+    @import url("https://fonts.googleapis.com/css2?family=Monomakh&display=swap");
+
+    h1 {
+      font-family: "Monomakh", sans-serif;
+      color: white;
+    }
+    
+
+}
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+}
+.sidebar ul {
+  list-style: none;
+
+}
+
+.sidebar li {
+  display: block;
+  width: calc(100% - 20px); /* Ocupa todo el ancho con margen */
+  padding: 10px;
+  background-color: #a9d406;
+  color: white;
+  /*border-radius: 5px;*/ /*se ve feo con el borde curvo*/
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px auto; /* Centra los botones */
+  text-align: center;
+}
+
+.sidebar li:hover {
+  background-color: #18a82b; /* Cambia a rojo al pasar el mouse */
+}
+.main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  @import url("https://fonts.googleapis.com/css2?family=Monomakh&display=swap");
+
+  h2, p {
+    font-family: "Monomakh", sans-serif;
+    color: #8c45bb;
+  }
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+  border-radius: 10px;
+}
+.card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.card button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px auto;
+}
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #007aff;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.box {
+  border: solid 1px black;
+}
